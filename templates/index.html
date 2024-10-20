@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Menú Principal</h2>
+<ul>
+    <li><a href="{{ url_for('curso') }}">Inscripción en Curso</a></li>
+    <li><a href="{{ url_for('usuario') }}">Registro de Usuarios</a></li>
+    <li><a href="{{ url_for('producto') }}">Registro de Productos</a></li>
+    <li><a href="{{ url_for('libro') }}">Registro de Libros</a></li>
+</ul>
+{% endblock %}

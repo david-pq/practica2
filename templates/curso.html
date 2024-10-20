@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<main>
+    <form method="POST" action="{{ url_for('inscripcion_completa') }}">
+        <h2>Inscripción en Curso</h2>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required><br>
+
+        <label for="curso">Curso:</label>
+        <select id="curso" name="curso" required>
+            <option value="Matemáticas">Matemáticas</option>
+            <option value="Física">Física</option>
+            <option value="Programación">Programación</option>
+            <option value="Redes">Redes</option>
+        </select><br>
+
+        <button type="submit">Inscribirse</button>
+    </form>
+</main>
+{% endblock %}
